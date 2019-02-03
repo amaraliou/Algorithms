@@ -1,0 +1,64 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - Fibonacci",
+            "request": "launch",
+            "mainClass": "Fibonacci"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - Factorial",
+            "request": "launch",
+            "mainClass": "Factorial"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - MergeSort",
+            "request": "launch",
+            "mainClass": "MergeSort"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - TimeSortingAlgorithm",
+            "request": "launch",
+            "mainClass": "TimeSortingAlgorithm"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - QuickSort",
+            "request": "launch",
+            "mainClass": "QuickSort"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - SelectionSort",
+            "request": "launch",
+            "mainClass": "SelectionSort"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - MaxSubArraySum",
+            "request": "launch",
+            "mainClass": "MaxSubArraySum"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - InsertionSortDescending",
+            "request": "launch",
+            "mainClass": "InsertionSortDescending"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - TestSortingAlgorithm",
+            "request": "launch",
+            "mainClass": "TestSortingAlgorithm"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - InsertionSort",
+            "request": "launch",
+            "mainClass": "InsertionSort"
+        }
+    ]
+}
