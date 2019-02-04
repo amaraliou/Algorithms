@@ -2,6 +2,12 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CodeLens (Launch) - WorstGenerator",
+            "request": "launch",
+            "mainClass": "WorstGenerator"
+        },
+        {
+            "type": "java",
             "name": "CodeLens (Launch) - Fibonacci",
             "request": "launch",
             "mainClass": "Fibonacci"

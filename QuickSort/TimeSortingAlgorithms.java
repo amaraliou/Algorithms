@@ -24,7 +24,25 @@ class TimeSortingAlgorithm {
         return b;
     }
 
+    public static void timeCalc (QuickSort sortAlgorithm, String fileName) {
+        try {
+            System.out.print("\n" + fileName + "\n");
+            System.out.print("\nNormal QuickSort: ");
+            int[] a = readArray(new int[] {}, fileName);
+            long time1 = System.currentTimeMillis();
+            sortAlgorithm.sort(a, 0, a.length - 1);
+            long time2 = System.currentTimeMillis();
+            long timeTaken = time2 - time1;
+            System.out.print(timeTaken + " milliseconds\n");
+        } catch (FileNotFoundException e) {
+            System.out.println("Bru"); 
+        }
+    }
+
     public static void main (String[] args){
+        QuickSort a = new QuickSort();
+        timeCalc(a, "int500k.txt"); // Need to refactor the algorithms
+        /*
         try {
             String[] files = new String[] {"int10.txt", "int50.txt", "int100.txt", "int1000.txt", "int500k.txt", "intBig.txt", "dutch.txt"};
 
@@ -89,5 +107,6 @@ class TimeSortingAlgorithm {
         } catch (FileNotFoundException e) {
             System.out.println("Bru");
         }
+        */
     }
 }
