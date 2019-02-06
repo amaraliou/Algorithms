@@ -17,8 +17,8 @@ public class TestSortingAlgorithm{
 
     public static void main (String[] args){
         int []a = {-2, -3, -4, -1, 2, 1, 5, 3};
-        System.out.println(isSorted(a));
+        assert (isSorted(a) == false);
         QuickSort.sort3way(a, 0, a.length - 1);
-        System.out.println(isSorted(a));
+        assert (isSorted(a) == true);
     }
 }

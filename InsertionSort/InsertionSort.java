@@ -2,9 +2,9 @@ import java.io.*;
 import java.util.*;
 import AbstactSort;
 
-public class InsertionSort{
+public class InsertionSort implements AbstractSort {
 
-    public static void sort(int a[]){
+    public void sort(int a[]){
         int n = a.length;
         for (int j = 1; j < n; j++){
             int key = a[j];
@@ -17,12 +17,4 @@ public class InsertionSort{
             a[i+1] = key;
         }
     } 
-    
-    public static void main (String[] args){
-        int []a = {-2, -3, -4, -1, 2, 1, 5, 3};
-        sort(a);
-        for(int number: a){
-            System.out.println(number);
-        }
-    }
 }

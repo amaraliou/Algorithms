@@ -1,9 +1,16 @@
 import java.io.*;
 import java.util.*;
+import AbstractSort;
 
-public class SelectionSort{
+public class SelectionSort implements AbstractSort {
 
-    public static void sort(int a[]){
+    protected String name;
+
+    public SelectionSort () {
+        this.name = "Selection Sort";
+    }
+
+    public void sort(int a[]) {
         int n = a.length;
         for (int i = 0; i < n - 1; i++) {
             int index = i;
@@ -16,14 +23,6 @@ public class SelectionSort{
             int min = a[index];
             a[index] = a[i];
             a[i] = min;
-        }
-    }
-
-    public static void main (String[] args){
-        int []a = {-2, -3, -4, -1, 2, 1, 5, 3};
-        sort(a);
-        for(int number: a){
-            System.out.println(number);
         }
     }
 }

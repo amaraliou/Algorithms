@@ -1,8 +1,8 @@
 import java.io.*;
 import java.util.*;
-import InsertionSort;
+import AbstractSort;
 
-public class MergeSort{
+public class MergeSort implements AbstractSort{
 
     //Basic MergeSort
     public static void merge(int[] a, int p, int q, int r){
@@ -37,15 +37,16 @@ public class MergeSort{
         }
     }
 
-    public static void sort(int a[], int p, int r){
+    public void sort3params(int a[], int p, int r){
         if (p < r) {
             int q = (p + r) / 2;
-            sort(a, p, q);
-            sort(a, q + 1, r);
+            sort3params(a, p, q);
+            sort3params(a, q + 1, r);
             merge(a, p, q, r);
         }
     }
 
+    /*
     //Optimized Merge Sort with Insertion Sort
     public static void optimizedSort(int a[], int p, int r, int k){
         if (p < r) {
@@ -69,12 +70,5 @@ public class MergeSort{
             }
         }
     }
-
-    public static void main (String[] args){
-        int []a = {-2, -3, -4, -1, 2, 1, 5, 3};
-        optimizedSort(a, 0, a.length - 1, 3);
-        for(int number: a){
-            System.out.println(number);
-        }
-    }
+    */
 }
