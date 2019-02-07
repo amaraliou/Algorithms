@@ -1,13 +1,13 @@
 import java.io.*;
 import java.util.*;
-import HybridQuickSort;
+import BubbleSort;
 
 public class Main {
     
     public static void main (String[] args) {
         int[] a = {-2, -3, -4, -1, 2, 1, 5, 3};
-        AbstractSort sortType = new QuickSort();
-        sortType.sort3params(a, 0, a.length -1);
+        AbstractSort sortType = new BubbleSort();
+        sortType.sort(a);
         for(int number: a){
             System.out.println(number);
         }
