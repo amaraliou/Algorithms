@@ -57,8 +57,7 @@ public class CircularlyLinkedList<E> {
             tail = new Node<>(e, null);
             tail.setNext(tail);
         } else {
-            Node<E> newest = new Node<>(e, tail.getNext());
-            tail.setNext(newest);
+            tail.setNext(new Node<>(e, tail.getNext()));
         }
         size++;
     }
@@ -80,5 +79,28 @@ public class CircularlyLinkedList<E> {
         }
         size--;
         return head.getElement();
+    }
+
+    public boolean equals(Object o) {
+        if (o == null){
+            return false;
+        }
+        if (getClass() != o.getClass()) {
+            return false;
+        }
+        DoublyLinkedList other = (DoublyLinkedList) o;
+        if (size != other.size()) {
+            return false;
+        }
+        Node<E> iterA = tail.getNext();
+        Node<E> iterB = other.tail.getNext();
+        while (iterA != tail) {
+            if (!iterA.getElement().equals(iterB.getElement())) {
+                return false;
+            }
+            iterA = iterA.getNext();
+            iterB = iterB.getNext();
+        }
+        return true;
     }
 }
