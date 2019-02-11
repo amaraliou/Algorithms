@@ -1,7 +1,7 @@
 import java.io.*;
 import java.util.*;
 
-public class SinglyLinkedList {
+public class SinglyLinkedList<E> {
 
     public static class Node<E> {
 
