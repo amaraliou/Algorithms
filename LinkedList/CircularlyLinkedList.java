@@ -3,7 +3,7 @@ import java.util.*;
 
 public class CircularlyLinkedList<E> {
 
-    public static class Node<E> {
+    private static class Node<E> {
 
         private E element;
         private Node<E> next;
