@@ -105,4 +105,33 @@ public class DoublyLinkedList<E> {
         size--;
         return node.getElement();
     }
+
+    public boolean equals(Object o) {
+        if (o == null) {
+            return false;
+        }
+        if (getClass() != o.getClass()) {
+            return false;
+        }
+        DoublyLinkedList other = (DoublyLinkedList) o;
+        if (size != other.size) {
+            return false;
+        }
+        if (!trailer.equals(other.trailer)) {
+            return false;
+        }
+        if (!header.equals(other.header)) {
+            return false;
+        }
+        Node<E> thisNode = header;
+        Node<E> otherNode = other.header;
+        while (thisNode.getNext() != trailer) {
+            thisNode = thisNode.getNext();
+            otherNode = otherNode.getNext();
+            if (!thisNode.equals(otherNode)) {
+                return false;
+            }
+        }
+        return true;
+    }
 }

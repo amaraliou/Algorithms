@@ -89,7 +89,7 @@ public class CircularlyLinkedList<E> {
             return false;
         }
         CircularlyLinkedList other = (CircularlyLinkedList) o;
-        if (size != other.size()) {
+        if (size != other.size) {
             return false;
         }
         Node<E> iterA = tail.getNext();
