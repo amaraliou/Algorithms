@@ -88,7 +88,7 @@ public class CircularlyLinkedList<E> {
         if (getClass() != o.getClass()) {
             return false;
         }
-        DoublyLinkedList other = (DoublyLinkedList) o;
+        CircularlyLinkedList other = (CircularlyLinkedList) o;
         if (size != other.size()) {
             return false;
         }
