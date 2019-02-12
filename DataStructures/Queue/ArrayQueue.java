@@ -6,7 +6,7 @@ public class ArrayQueue<E> implements Queue<E> {
 
     public static final int CAPACITY = 1000;
     private E[] data;
-    private int front = 0;
+    private int f = 0;
     private int size = 0;
 
     public ArrayQueue() {
