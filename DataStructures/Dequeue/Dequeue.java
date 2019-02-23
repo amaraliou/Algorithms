@@ -1,7 +1,7 @@
 import java.io.*;
 import java.util.*;
 
-public interface Deque<E> {
+public interface Dequeue<E> {
 
     int size();
     boolean isEmpty();
